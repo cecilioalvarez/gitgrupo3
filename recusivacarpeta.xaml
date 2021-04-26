@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1027.2,4452</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>2224.8,4613.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>recusivacarpeta_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="30">
@@ -72,7 +72,7 @@
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="recusivacarpeta" sap:VirtualizedContainerService.HintSize="1037.6,4387.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="recusivacarpeta" sap:VirtualizedContainerService.HintSize="757.6,4548.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:String[]" Name="lista" />
       <Variable x:TypeArguments="s:String[]" Name="directorios" />
@@ -89,7 +89,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="996,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="716,60" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="s:String[]">[directorios]</OutArgument>
       </Assign.To>
@@ -97,13 +97,13 @@
         <InArgument x:TypeArguments="s:String[]">[directory.getdirectories(nombrecarpeta)]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="Para cada directorio que exista" sap:VirtualizedContainerService.HintSize="996,4194.4" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[directorios]">
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="Para cada directorio que exista" sap:VirtualizedContainerService.HintSize="716,4356" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[directorios]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:String">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:String" Name="item" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Cuerpo" sap:VirtualizedContainerService.HintSize="960.8,4060" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Cuerpo" sap:VirtualizedContainerService.HintSize="680.8,4221.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="variable3" />
             </Sequence.Variables>
@@ -112,17 +112,17 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <WriteLine DisplayName="Escribir línea" sap:VirtualizedContainerService.HintSize="919.2,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[item]" />
-            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invocar archivo de flujo de trabajo" sap:VirtualizedContainerService.HintSize="919.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="recusivacarpeta.xaml">
+            <WriteLine DisplayName="Escribir línea" sap:VirtualizedContainerService.HintSize="639.2,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[item]" />
+            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invocar archivo de flujo de trabajo" sap:VirtualizedContainerService.HintSize="639.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="recusivacarpeta.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <InArgument x:TypeArguments="x:String" x:Key="nombrecarpeta">[item]</InArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
-            <WriteLine DisplayName="Escribir línea" sap:VirtualizedContainerService.HintSize="919.2,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="[directorios.Length.ToString]" />
-            <WriteLine DisplayName="Escribir línea" sap:VirtualizedContainerService.HintSize="919.2,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_6" Text="[(directorios.Length=2).ToString]" />
-            <If Condition="[directorios.length=2]" DisplayName="Si" sap:VirtualizedContainerService.HintSize="919.2,1552" sap2010:WorkflowViewState.IdRef="If_1">
+            <WriteLine DisplayName="Escribir línea" sap:VirtualizedContainerService.HintSize="639.2,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="[directorios.Length.ToString]" />
+            <WriteLine DisplayName="Escribir línea" sap:VirtualizedContainerService.HintSize="639.2,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_6" Text="[(directorios.Length=2).ToString]" />
+            <If Condition="[directorios.length=2]" DisplayName="Si" sap:VirtualizedContainerService.HintSize="639.2,1713.6" sap2010:WorkflowViewState.IdRef="If_1">
               <If.Then>
-                <Sequence DisplayName="Secuencia" sap:VirtualizedContainerService.HintSize="744,1402.4" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                <Sequence DisplayName="Secuencia" sap:VirtualizedContainerService.HintSize="604,1534.4" sap2010:WorkflowViewState.IdRef="Sequence_7">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:String" Name="textoplantilla" />
                   </Sequence.Variables>
@@ -131,7 +131,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Ámbito de aplicación de Excel" sap:VirtualizedContainerService.HintSize="702.4,125.6" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_4" InstanceCachePeriod="3000" WorkbookPath="[item &amp;&quot;\resumen.xls&quot;]">
+                  <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Ámbito de aplicación de Excel" sap:VirtualizedContainerService.HintSize="562.4,125.6" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_4" InstanceCachePeriod="3000" WorkbookPath="[item &amp;&quot;\resumen.xls&quot;]">
                     <ui:ExcelApplicationScope.Body>
                       <ActivityAction x:TypeArguments="ui:WorkbookApplication">
                         <ActivityAction.Argument>
@@ -140,13 +140,13 @@
                       </ActivityAction>
                     </ui:ExcelApplicationScope.Body>
                   </ui:ExcelApplicationScope>
-                  <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="Para cada fichero excel" sap:VirtualizedContainerService.HintSize="702.4,1144" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[directory.getfiles(item)]">
+                  <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="Para cada fichero excel" sap:VirtualizedContainerService.HintSize="562.4,1276" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[directory.getfiles(item)]">
                     <ui:ForEach.Body>
                       <ActivityAction x:TypeArguments="x:String">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="x:String" Name="fichero" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Cuerpo" sap:VirtualizedContainerService.HintSize="667.2,1009.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                        <Sequence DisplayName="Cuerpo" sap:VirtualizedContainerService.HintSize="527.2,1141.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
                           <Sequence.Variables>
                             <Variable x:TypeArguments="x:String" Name="competencias" />
                             <Variable x:TypeArguments="x:String" Name="datosresumen" />
@@ -156,7 +156,8 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <If Condition="[not fichero.Contains(&quot;resumen&quot;)]" DisplayName="Si" sap:VirtualizedContainerService.HintSize="625.6,604.8" sap2010:WorkflowViewState.IdRef="If_2">
+                          <WriteLine DisplayName="Escribir línea" sap:VirtualizedContainerService.HintSize="485.6,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_13" Text="[directory.GetFiles(item).Length.ToString]" />
+                          <If Condition="[not fichero.Contains(&quot;resumen&quot;)]" DisplayName="Si" sap:VirtualizedContainerService.HintSize="485.6,634.4" sap2010:WorkflowViewState.IdRef="If_2">
                             <If.Then>
                               <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Ámbito de aplicación de Excel" sap:VirtualizedContainerService.HintSize="450.4,455.2" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_5" InstanceCachePeriod="3000" WorkbookPath="[fichero]">
                                 <ui:ExcelApplicationScope.Body>
@@ -176,8 +177,8 @@
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <ui:ExcelReadRange AddHeaders="False" DataTable="[tabladatos]" DisplayName="Leer rango" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="ExcelReadRange_2" Range="B22:AQ22" SheetName="Hoja1" />
-                                        <ui:ExcelReadRange AddHeaders="False" DataTable="[salidaplantilla]" DisplayName="Leer rango" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="ExcelReadRange_4" Range="B7:AP7" SheetName="Hoja1" />
+                                        <ui:ExcelReadRange AddHeaders="False" DataTable="[tabladatos]" DisplayName="Leer rango sumatorios de colores" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="ExcelReadRange_2" Range="B22:AQ22" SheetName="Hoja1" />
+                                        <ui:ExcelReadRange AddHeaders="False" DataTable="[salidaplantilla]" DisplayName="Leer rango estructura competencias" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="ExcelReadRange_4" Range="B7:AP7" SheetName="Hoja1" />
                                       </Sequence>
                                     </Sequence>
                                   </ActivityAction>
@@ -185,8 +186,8 @@
                               </ui:ExcelApplicationScope>
                             </If.Then>
                           </If>
-                          <ui:WriteRange AddHeaders="False" DataTable="[salidaplantilla]" DisplayName="Escribir rango" sap:VirtualizedContainerService.HintSize="625.6,116" sap2010:WorkflowViewState.IdRef="WriteRange_5" SheetName="Hoja1" StartingCell="A2:AO2" WorkbookPath="[item &amp;&quot;\resumen.xls&quot;]" />
-                          <ui:AppendRange DataTable="[tabladatos]" DisplayName="Anexar rango" sap:VirtualizedContainerService.HintSize="625.6,116" sap2010:WorkflowViewState.IdRef="AppendRange_1" SheetName="Hoja1" WorkbookPath="[item &amp;&quot;\resumen.xls&quot;]" />
+                          <ui:WriteRange AddHeaders="False" DataTable="[salidaplantilla]" DisplayName="Escribir rango" sap:VirtualizedContainerService.HintSize="485.6,116" sap2010:WorkflowViewState.IdRef="WriteRange_5" SheetName="Hoja1" StartingCell="A2:AO2" WorkbookPath="[item &amp;&quot;\resumen.xls&quot;]" />
+                          <ui:AppendRange DataTable="[tabladatos]" DisplayName="Anexar rango con datos de colores" sap:VirtualizedContainerService.HintSize="485.6,116" sap2010:WorkflowViewState.IdRef="AppendRange_1" SheetName="Hoja1" WorkbookPath="[item &amp;&quot;\resumen.xls&quot;]" />
                         </Sequence>
                       </ActivityAction>
                     </ui:ForEach.Body>
@@ -194,7 +195,7 @@
                 </Sequence>
               </If.Then>
             </If>
-            <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Ámbito de aplicación de Excel" sap:VirtualizedContainerService.HintSize="919.2,1914.4" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_6" InstanceCachePeriod="3000" WorkbookPath="[item &amp;&quot;\resumen.xls&quot;]">
+            <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Ámbito de aplicación de Excel" sap:VirtualizedContainerService.HintSize="639.2,1914.4" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_6" InstanceCachePeriod="3000" WorkbookPath="[item &amp;&quot;\resumen.xls&quot;]">
               <ui:ExcelApplicationScope.Body>
                 <ActivityAction x:TypeArguments="ui:WorkbookApplication">
                   <ActivityAction.Argument>
